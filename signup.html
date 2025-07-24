@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flyers Academy Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 14px;
+      padding-left: 16px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #3a86ff;
+      background-color: #fff;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: -10px;
+      left: 12px;
+      background-color: #fff;
+      padding: 0 6px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #3a86ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .signup-btn:hover {
+      background-color: #265df2;
+    }
+
+    @media (max-width: 500px) {
+      .signup-container {
+        margin: 20px;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Create Your Account</h2>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="user_email" required>
+      </div>
+      <div class="form-group">
+        <label for="class">Class</label>
+        <input type="text" id="class" name="user_class" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Create Password</label>
+        <input type="password" id="password" name="user_password" required>
+      </div>
+     <a href="study.html"><button type="submit" class="signup-btn">Sign Up</button></a>
+    </form>
+  </div>
+
+</body>
+</html>

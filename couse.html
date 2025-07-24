@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flyers Academy</title>
+  <style>
+    body {
+      background-color: #2c2c2c;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1f1f1f;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .course-box {
+      background-color: #444;
+      color: white;
+      border-radius: 12px;
+      padding: 35px 20px;
+      font-size: 18px;
+      text-align: center;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .course-box:hover {
+      background-color: #666;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Flyers Academy</div>
+  </div>
+
+  <!-- Course Boxes (10 only) -->
+  <div class="course-grid">
+    <a href="https://testbook.com/free-live-classes/bank-exams" class="course-box">SSC & Banking</a>
+    <a href="https://engineering.careers360.com/jee-main-free-crash-course" class="course-box">JEE Mains & Advanced</a>
+    <a href="https://www.ksacademycoimbatore.com/free-ca-online-classes.php" class="course-box">CA / CS Foundation</a>
+    <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/toefl-prep-course2" class="course-box">IELTS / TOEFL</a>
+    <a href="https://learn.saylor.org/course/index.php?categoryid=29&utm_source=google&utm_medium=keyword&utm_campaign=google_keyword_ad_esl&gad_source=1&gad_campaignid=6887670381&gbraid=0AAAAADpgy82xEUnxcL9XEC4P1k8FUDxT-&gclid=CjwKCAjwvO7CBhAqEiwA9q2YJequcYTfdgrLV_AUfFuFWMalNVmAs1V_j6O6UsZMUlWddHbn2-0dkxoCGkwQAvD_BwE" class="course-box">Spoken English</a>
+    <a href="https://www.mygreatlearning.com/software/free-courses" class="course-box">Soft Skills Training</a>
+    <a href="https://learn.saylor.org/course/view.php?id=439&gad_source=1&gad_campaignid=12310361451&gbraid=0AAAAADyB2NDDWO_W98nIRnIc65q3nDnhZ&gclid=CjwKCAjwvO7CBhAqEiwA9q2YJbtYvzr7Sl4mZolk3mJ9eX5nx6G_zyJnqlERCCcZykySh5X6MnrYgRoCpSkQAvD_BwE" class="course-box">Python Programming</a>
+    <a href="https://www.codecademy.com/learn/introduction-to-javascript" class="course-box">JavaScript Basics</a>
+  </div>
+
+</body>
+</html>
